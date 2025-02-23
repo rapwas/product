@@ -65,6 +65,12 @@ class _UpdateProductPageState extends State<UpdateProductPage> {
                     MaterialPageRoute(
                       builder: (context) => ProductPage(),
                     ));
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('Product updated successfully!'),
+                    backgroundColor: Colors.green,
+                  ),
+                );
               },
               child: Text(
                   widget.product == null ? "Add Product" : "Update Product"),

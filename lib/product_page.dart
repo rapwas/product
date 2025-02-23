@@ -77,13 +77,6 @@ class _ProductPageState extends State<ProductPage> {
                       ).then((result) {
                               if (result == true) {
                                 getProductList();
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  const SnackBar(
-                                    content:
-                                        Text('Product updated successfully!'),
-                                    backgroundColor: Colors.green,
-                                  ),
-                                );
                               }
                             });
                     },
