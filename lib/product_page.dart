@@ -66,7 +66,7 @@ class _ProductPageState extends State<ProductPage> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   IconButton(
-                    icon: const Icon(Icons.edit, color: Colors.blue),
+                    icon: const Icon(Icons.edit, color: Color.fromARGB(255, 88, 180, 255)),
                     onPressed: () {
                       Navigator.push(
                         context,
